@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Grids practice</title>
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+
+    <body>
+
+        <div class="main-grid">
+            <div class="header">
+                <nav>
+                    <h1>Grid</h1>
+                    <ul>
+                        <li><a href="index.html">Go To Grid Page</a></li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                        <li>Item4</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar">
+                <h2>Document</h2>
+                <ul>
+                    <li>Side bar content</li>
+                    <li>Side bar content</li>
+                    <li>Side bar content</li>
+                    <li>Side bar content</li>
+                    <li>Side bar content</li>
+                    <li>Side bar content</li>
+                </ul>
+            </div>
+            <div class="body">
+                <div>
+                    <ul id='list'></ul>
+                    <script>
+                        let cards = []
+                        for(let i=1 ; i<=20; i++){
+                            cards.push(i)
+                        }
+                        cards.forEach(item => {
+                            let li = document.createElement('li')
+                            let text = document.createTextNode('card'+ item)
+                            li.appendChild(text)
+                            document.getElementById("list").appendChild(li)
+                        })
+                    </script>
+                </div>
+            </div>
+            <div class="footer">
+                @Ranganath
+            </div>
+        </div>
+    </body>
+
+</html>
